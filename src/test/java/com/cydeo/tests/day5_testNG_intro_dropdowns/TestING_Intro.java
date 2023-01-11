@@ -64,9 +64,3 @@ public class TestING_Intro {
 
 
 
-/*
-
-Assert.assertTrue(actual.equals(expected), "your message will go here");
-
-
- */
