@@ -30,7 +30,7 @@ public class T3_CRM_LOGIN {
         driver.get("https://login1.nextbasecrm.com/");
 
         //Calling my utility method to login helpdesk1
-        CRM_Utilities.crm_login(driver);
+        CRM_Utilities.crm_login(driver,"helpdesk1@cybertekschool.com","UserUser");
 
 /*
                 //3. Enter valid username
@@ -48,8 +48,10 @@ public class T3_CRM_LOGIN {
         WebElement loginButton = driver.findElement(By.xpath("//input[@value='Log In']"));
         loginButton.click();
 
-CRM Utilitiese kopyalandı
+day7 CRM Utilitiese kopyalandı
  */
+
+
         //6. Verify title is as expected:
         //Expected: Portal
         BrowserUtils.verifyTitle(driver, "Portal");
@@ -62,33 +64,6 @@ CRM Utilitiese kopyalandı
 
 /*
 
-
-    //TC #3: Login scenario
-
-
-    @Test
-    public void crm_login_test_2(){
-
-        //2. Go to : https://login1.nextbasecrm.com/
-        driver.get("https://login1.nextbasecrm.com/");
-
-
-
-        //6. Verify title is as expected:
-        //Expected: Portal
-        BrowserUtils.verifyTitle(driver, "Portal");
-
-    }
-
-
-    @Test
-    public void crm_login_test_3(){
-
-        //2. Go to : https://login1.nextbasecrm.com/
-        driver.get("https://login1.nextbasecrm.com/");
-
-        //Calling my utility method to login helpdesk
-        CRM_Utilities.crm_login(driver, "helpdesk2@cybertekschool.com", "UserUser" );
 
         //6. Verify title is as expected:
         //Expected: Portal
