@@ -28,7 +28,8 @@ public class T3_CRM_LOGIN {
         //2. Go to : https://login1.nextbasecrm.com/
         driver.get("https://login1.nextbasecrm.com/");
 
-        //3. Enter valid username
+
+                //3. Enter valid username
         WebElement inputUsername = driver.findElement(By.xpath("//input[@name='USER_LOGIN']"));
         inputUsername.sendKeys("helpdesk1@cybertekschool.com");
 
@@ -46,6 +47,8 @@ public class T3_CRM_LOGIN {
         //6. Verify title is as expected:
         //Expected: Portal
         BrowserUtils.verifyTitle(driver, "Portal");
+
+
 
     }
 
