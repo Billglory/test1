@@ -1,5 +1,6 @@
 package com.cydeo.tests.day8_properties_config_reader;
 
+
 import com.cydeo.utilities.WebDriverFactory;
 import com.cydeo.utilities.WebTableUtils;
 import org.openqa.selenium.By;
@@ -62,7 +63,7 @@ public class T1_WebTable_Order_Verify {
     @Test
     public void test2() {
 
-        String costumerOrderDate1=WebTableUtils.returnOrderDate(driver, "Alexandra Gray");
+        String costumerOrderDate1= WebTableUtils.returnOrderDate(driver, "Alexandra Gray");
         System.out.println("costumerOrderDate1 = " + costumerOrderDate1);
 
 
