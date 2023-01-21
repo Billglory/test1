@@ -23,6 +23,8 @@ public class T1_WindowHandling {
 
     }
 
+
+
     @Test
     public void window_handling_test() {
         //2. Go to: https://www.amazon.com
@@ -38,7 +40,7 @@ public class T1_WindowHandling {
 
         BrowserUtils.switchWindowAndVerify(driver, "etsy", "Etsy");
 
-     /*   Set<String> allWindowHandles = driver.getWindowHandles();
+       Set<String> allWindowHandles = driver.getWindowHandles();
         for (String each : allWindowHandles) {
             driver.switchTo().window(each);
             System.out.println("Current :" + driver.getCurrentUrl());
@@ -54,7 +56,7 @@ public class T1_WindowHandling {
 
         Assert.assertTrue(driver.getTitle().contains("Etsy"));
 
-
+/*
       */
 
     }

@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 public class T1_locators_getText {
 
     public static void main(String[] args) {
+
+
         //TC #1: NextBaseCRM, locators and getText() practice
         //1- Open a Chrome browser
         //WebDriverManager.chromedriver().setup();
@@ -16,6 +18,19 @@ public class T1_locators_getText {
 
         driver.manage().window().maximize();
 
+
+        driver.get("http://practice.cydeo.com/multiple_buttons");
+        //3. Click on Button 1
+        WebElement button1 = driver.findElement(By.xpath("//button[text()='Button 1']"));
+        button1.click();
+        //4. Verify text displayed is as expected:
+        //Expected: “Clicked on button one!”
+        WebElement resultText = driver.findElement(By.xpath("//p[@id='result']"));
+
+        System.out.println("resultText.isDisplayed(),\"Clicked on button one!\" = " + resultText.isDisplayed());
+
+
+/*
         //2- Go to: https://login1.nextbasecrm.com/
         driver.get("https://login1.nextbasecrm.com/");
 
@@ -48,5 +63,7 @@ public class T1_locators_getText {
             System.out.println("Error message verification FAILED!!!");
         }
 
+
+ */
     }
 }

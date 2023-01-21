@@ -12,7 +12,7 @@ public class P03_GettingPageTitle {
 
         driver.get("https://www.cydeo.com");
 
-
+/*
         String title= driver.getTitle();
         System.out.println("Title of the page"+ title);
 
@@ -22,7 +22,9 @@ public class P03_GettingPageTitle {
             System.out.println("test failed");
         }
 
-        driver.quit();
+        //driver.quit();
+
+ */
 
     }
 

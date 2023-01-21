@@ -17,8 +17,7 @@ public class P02_CloseAndQuitBrowser {
 
         Thread.sleep(5000);
 
-        driver.close();
-      driver.quit();
+
 
     }
 }
