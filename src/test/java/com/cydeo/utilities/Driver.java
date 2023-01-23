@@ -31,6 +31,7 @@ public class Driver {
         if (driver == null) {
 
 
+
             /*
 
             We read our browserType from configuration.properties.
@@ -48,7 +49,7 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     driver.manage().window().maximize();
-                    //   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
@@ -57,21 +58,20 @@ public class Driver {
                     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     break;
 
-
             }
         }
 
         return driver;
+
     }
 
-
-    /*
-    This method will make sure our driver value is always null after using quit() method
-
+/*
     public static void closeDriver() {
         if (driver != null) {
             driver.quit(); // this line will terminate the existing session. value will not even be null
             driver = null;
 
-    */
+
+ */
+
         }

@@ -22,9 +22,6 @@ public class T1_WindowHandling {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     }
-
-
-
     @Test
     public void window_handling_test() {
         //2. Go to: https://www.amazon.com

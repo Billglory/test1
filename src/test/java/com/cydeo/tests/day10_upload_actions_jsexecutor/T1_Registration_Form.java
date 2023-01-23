@@ -3,32 +3,40 @@ package com.cydeo.tests.day10_upload_actions_jsexecutor;
 import com.cydeo.utilities.ConfigurationReader;
 
 import com.cydeo.utilities.Driver;
+import com.github.javafaker.Faker;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class T1_Registration_Form {
 
-    @Test
-    public void registration_form_test(){
+   @Test
+    public void registration_form_test() {
 
-    }
+
         //1. Open browser
         //2. Go to website:https://practice.cydeo.com/registration_form
         //Driver.getDriver() --> driver
-        Driver.getDriver.get(ConfigurationReader.getProperty("registration.form.url")
+       Driver.getDriver().get(ConfigurationReader.getProperty("registration.form.url"));
 
+       // Driver.getDriver.get(
+       //Create JavaFaker object
+       Faker faker = new Faker();
 
+       //3. Enter first name
+       //WebElement inputFirstName = driver.findElement(By.xpath("//input[@name='firstname']"));
+       WebElement inputFirstName = Driver.getDriver().findElement(By.xpath("//input[@name='firstname']"));
+       String fakerFirstName = faker.name().firstName();
+       inputFirstName.sendKeys(fakerFirstName);
+
+    }
 }
+
+
+
 /*
- );
 
-        //Create JavaFaker object
-        Faker faker = new Faker();
 
-        //3. Enter first name
-        //WebElement inputFirstName = driver.findElement(By.xpath("//input[@name='firstname']"));
-        WebElement inputFirstName = Driver.getDriver().findElement(By.xpath("//input[@name='firstname']"));
-        String fakerFirstName = faker.name().firstName();
-        inputFirstName.sendKeys(fakerFirstName);
 
         //4. Enter last name
         WebElement inputLastName = Driver.getDriver().findElement(By.xpath("//input[@name='lastname']"));
