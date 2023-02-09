@@ -34,5 +34,7 @@ public class work1111 {
         BrowserUtils.sleep(1);
 
         action.doubleClick(secondToDoItem).doubleClick().sendKeys(Keys.DELETE, "create bug report(edited)", Keys.ENTER).perform();
+
+
     }
 }

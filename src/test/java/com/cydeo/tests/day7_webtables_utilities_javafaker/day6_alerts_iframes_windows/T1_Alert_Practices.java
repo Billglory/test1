@@ -1,4 +1,4 @@
-package com.cydeo.tests.day6_alerts_iframes_windows;
+package com.cydeo.tests.day7_webtables_utilities_javafaker.day6_alerts_iframes_windows;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.Alert;
