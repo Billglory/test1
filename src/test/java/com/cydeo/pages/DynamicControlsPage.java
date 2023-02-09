@@ -33,3 +33,4 @@ public class DynamicControlsPage {
     public WebElement inputBox;
 
 }
+

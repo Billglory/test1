@@ -8,14 +8,17 @@ import org.openqa.selenium.support.PageFactory;
 public class DynamicLoad7Page {
        //#1-Create constructor and instantiate driver and object of the class
 
-    public DynamicLoad7Page(){
-        PageFactory.initElements(Driver.getDriver(),this);
+     public DynamicLoad7Page(){
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
 
-            }
-            @FindBy(xpath = "//strong[.='Done!']")
+    @FindBy(xpath = "//strong[.='Done!']")
     public WebElement doneMessage;
 
-    @FindBy(xpath = "//i pongeBobImage;
+    @FindBy(xpath = "//img[@alt='square pants']")
+    public WebElement spongeBobImage;
 
 
 }
+
+
